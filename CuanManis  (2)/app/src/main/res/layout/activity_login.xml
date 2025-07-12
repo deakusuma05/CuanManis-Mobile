@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5E5"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!-- LOGO -->
+    <ImageView
+        android:id="@+id/logoCuanManis"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@drawable/logo_cuanmanis"
+        android:src="@drawable/logo_cuanmanis" />
+
+    <!-- WELCOME BOX -->
+    <!-- EMAIL -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Selamat Datang -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Selamat Datang"
+            android:textColor="#8B4513"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Tagline (tidak bold, masih di tengah) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Cari atau Barter Barang Kebutuhan Sesama Mahasiswa??"
+            android:textColor="#444"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Cuan Manis Solusinya"
+            android:textColor="#FE4444"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/emailInput"
+        style="@style/CuanInputStyle"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <!-- PASSWORD -->
+    <EditText
+        android:id="@+id/passwordInput"
+        style="@style/CuanInputStyle"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginBottom="12dp" />
+
+    <!-- BUTTON LOGIN -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="#940505"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- LUPA PASSWORD -->
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-medium"
+        android:minHeight="48dp"
+        android:text="Lupa kata sandi?"
+        android:textColor="#FF7B00"
+        android:textSize="14sp" />
+
+    <!-- REGISTER LINK -->
+    <TextView
+        android:id="@+id/tvRegisterLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-medium"
+        android:minHeight="48dp"
+        android:text="Belum punya akun? Daftar di sini"
+        android:textColor="#FF7B00"
+        android:textSize="14sp" />
+
+    <!-- ILUSTRASI -->
+    <ImageView
+        android:id="@+id/ilustrasiImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:contentDescription="@drawable/login_illustration"
+        android:src="@drawable/login_illustration"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="emailRegisterInput" type="id"/>
+    <item name="passwordRegisterInput" type="id"/>
+    <item name="buttonRegister" type="id"/>
+</resources>

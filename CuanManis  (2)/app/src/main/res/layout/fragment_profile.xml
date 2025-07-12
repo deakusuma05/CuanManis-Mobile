@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFfff">
+
+    <!-- ===== HEADER ==================================================== -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF8C4">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            app:title="Profil"
+            app:titleCentered="true"
+            app:titleTextAppearance="@style/ToolbarTitleBold"
+            app:menu="@menu/profile_menu" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- ===== KONTEN ==================================================== -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:padding="24dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- FOTO PROFIL BULAT -->
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_profile_placeholder"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_profile_circle"
+                android:clipToOutline="true"
+                android:layout_marginBottom="12dp" />
+
+            <!-- TOMBOL GANTI FOTO -->
+            <Button
+                android:id="@+id/btnChangePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Foto"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FFA000"
+                android:enabled="true"
+                android:layout_marginBottom="24dp" />
+
+            <!-- FORM -->
+            <EditText
+                android:id="@+id/etEmail"
+                style="@style/CuanInputStyle"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                style="@style/CuanInputStyle"
+                android:hint="Username"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etDob"
+                style="@style/CuanInputStyle"
+                android:hint="Tanggal Lahir"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/etGender"
+                style="@style/CuanInputStyle"
+                android:hint="Jenis Kelamin"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                style="@style/CuanInputStyle"
+                android:hint="No. Handphone"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/etCampus"
+                style="@style/CuanInputStyle"
+                android:hint="Asal Kampus"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etMajor"
+                style="@style/CuanInputStyle"
+                android:hint="Jurusan"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etAlamat"
+                style="@style/CuanInputStyle"
+                android:hint="Alamat"
+                android:inputType="textPostalAddress" />
+
+            <!-- BUTTON SIMPAN -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#F57C00"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="80dp" />
+
+        </LinearLayout>
+        <!-- … (LinearLayout & view isi seperti sebelumnya)
+             Semua EditText sudah memakai style CuanInputStyle … -->
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

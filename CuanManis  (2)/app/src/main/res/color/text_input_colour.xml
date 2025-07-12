@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Warna default (misalnya mode siang) -->
+    <item android:color="#000000" android:alpha="0.87"/>
+    <!-- Warna alternatif (misalnya mode malam), bisa dikontrol via kode -->
+    <item android:color="#FFFFFF" android:alpha="0.87" android:state_enabled="false"/>
+</selector>

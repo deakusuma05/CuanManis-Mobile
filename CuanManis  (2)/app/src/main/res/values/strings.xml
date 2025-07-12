@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CuanManis</string>
+    <string name="logo_cuanmanis">Logo CuanManis</string>
+    <string name="ilustrasi_login">Ilustrasi Login</string>
+    <string name="refresh">Refresh tampilan</string>
+</resources>
