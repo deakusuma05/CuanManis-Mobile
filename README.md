@@ -9,11 +9,6 @@
 - Tambah, edit, dan hapus barang
 - Filter & pencarian produk
 
-### 💰 Manajemen Keuangan
-- Tambah transaksi keuangan
-- Lihat riwayat transaksi
-- Pelacakan tabungan
-
 ### 🔐 Autentikasi & Pengguna
 - Login & Registrasi (Firebase Auth)
 - Manajemen akun
